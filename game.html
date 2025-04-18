@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> CarQuiz</title> 
-        <link rel="stylesheet" href="game.css" />
-    </head>
-    <body>
-        <div class="quiz-container">
-            <div class="category-badge">Vehicles<span class="difficulty">Easy</span></div>
-            <h1>How Best do you Know Your Car </h1>
-            <H2> Start Quiz</H2>
-            <a class="btn" href="/game.html" > Start Quiz</a>
-            <a class="btn" href="/results.html" > View Scores</a>
-            <a class="btn" href="/index.html" > Home</a>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CarQuiz</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <p align ="center">
+        <img src="./assets/CarTriviaLogo.png" alt="Car Quiz Logo" width="200">
+      </p>
+
+    <div class="quiz-container">
+        <div class="category-badge">Vehicles<span class="difficulty">Easy</span></div>
+        <div id="question"></div>
         
-        <footer>
-            <p>&copy; 2025 Ellis lunayo</p>
-        </footer>
-    </body>
-    <script src="index.js"> </script>
+        <div id="answers">
+          <!-- Answer buttons will be inserted here by JavaScript -->
+        </div>
+        
+        <div id="feedback" class="feedback"></div>
+        
+        <div class="controls">
+            <button id="next-btn" class="next-btn" style="display:none;">Next Question</button>
+          </div>
+
+    <!-- <a class="btn" href="/game.html"> Start Quiz</a> -->
+    <!-- <a class="btn" href="/results.html"> View Scores</a> -->
+    <a class="btn" href="/index.html"> Home</a>
+
+    <footer>
+        <p>&copy; 2025 Ellis lunayo</p>
+    </footer>
+</body>
+<script src="index.js"> </script>
+
 </html>

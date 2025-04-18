@@ -35,11 +35,12 @@
     transition: transform 150ms;
 }
 
+/* 
 .question {
     font-size: 18px;
     margin-bottom: 20px;
     color: #333;
-}
+} */
 .question {
     font-size: 18px;
     margin-bottom: 20px;
@@ -116,3 +117,31 @@
 .next-btn:hover {
     background-color: #0b7dda;
 }
+
+
+.answers {
+    width: 100%;
+    max-width: 400px; /* or whatever you prefer */
+    margin: 0 auto; /* centers it */
+  }
+  
+  .controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  .answer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* fills parent container */
+    padding: 1em; /* better for buttons than % */
+    border: 0.1em solid rgb(97, 186, 135);
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 9px;
+    box-sizing: border-box;
+  }
+  

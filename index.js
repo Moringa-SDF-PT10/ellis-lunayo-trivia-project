@@ -41,7 +41,7 @@ function showQuestion() {
   questionsContainer.innerHTML = "";
   quizContainer.innerHTML = "";
 
-  // Show question the question from the json obje
+  // Show question the question from the json object
   const questionText = document.createElement("h2");
   questionText.innerHTML = data.question;
   questionsContainer.appendChild(questionText);
